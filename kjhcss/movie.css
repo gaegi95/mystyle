@@ -1,0 +1,41 @@
+/*
+1 movie.html 에 css/movie.css 를 외부 연결하세요
+2 body 에 background-color 를 설정해 페이지 전체 배경색을 지정하세요 (흰색 제외)
+3 영화 제목이 담긴 영역(div 또는 header)에 background-color와 color를 설정해 눈에 띄게 꾸미세요
+4 페이지 어느 한 영역(예: 제목 배경, 리뷰 카드)에 수평 스트라이프 패턴을 적용하세요
+background-image: linear-gradient(...) + background-size 사용
+5 스트라이프 패턴을 적용한 영역에 background-color 도 함께 설정해 투명한 줄 사이에 배경색이 보이게 하세요
+6 별점이나 장르 태그 등 작은 요소에 background-color와 color를 조합해서 배지(badge) 스타일을 만드세요
+
+✨추가 조건 — background 심화
+추가1 수평 스트라이프 외에 사선 스트라이프(45deg)도 한 곳에 추가로 적용하세요
+background-image: linear-gradient(45deg, 색상 25%, transparent 25%), linear-gradient(45deg, transparent 75%, 색상 75%);
+background-size: 20px 20px;
+background-position: 0 0, 10px 10px; ← size의 절반값!
+추가2 background 단축 속성을 사용해서 color + image + repeat + position 을 한 줄로 작성하는 구간을 1개 이상 만드세요
+추가3 영화 포스터 이미지가 있다면 background-size: cover 와 background-position: center 를 활용해서 배경 이미지로 넣어보세요
+
+💡 스트라이프 패턴 핵심 원리
+수평 줄무늬 (레이어 1개): linear-gradient(0deg, 색상 50%, transparent 50%) + background-size: 20px 20px
+사선 줄무늬 (레이어 2개): background-position 의 두 번째 레이어는 항상 size ÷ 2 만큼 이동시켜야 이음새가 맞아요!
+
+🖥️ CSS 작성 예시 (참고용)
+css/movie.css  body 배경색
+body { background-color: #1a1a2e; color: #eee; }
+수평 스트라이프 .stripe-area { background-color: #ffffff; background-image: linear-gradient(0deg, #afa9ec 50%, transparent 50%); background-size: 20px 20px; }
+장르 배지.genre-badge { background-color: #c8390a; color: #fff; }
+
+body에 background-color를 설정했나요?
+linear-gradient로 스트라이프 패턴을 만들었나요?
+background-size를 설정했나요?
+스트라이프 영역에 background-color도 함께 설정했나요?
+사선 스트라이프의 background-position 두 번째 값이 size/2인가요?
+*/
+
+body {background-color: beige;}
+h1 {background-color: skyblue;}
+.horizontal {background-color: white; background-image: linear-gradient(0deg, yellowgreen 50%, transparent 50%); background-size: 20px 20px;}
+.badge {background-color: aquamarine; color: blue;}
+.diagonal {background-image: repeating-linear-gradient(45deg, gold, gold 10px, transparent 10px, transparent 20px);}
+.box {background: royalblue;}
+a {background-size: cover; background-position: center;}

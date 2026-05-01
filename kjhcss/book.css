@@ -1,0 +1,42 @@
+/* 
+1 book.html 에 css/book.css 를 외부 연결하세요
+2 페이지 본문 p 태그에 text-indent: 20px 를 적용해 첫 줄 들여쓰기를 설정하세요
+3 책 제목이 있는 태그에 letter-spacing: 1px 로 자간을 설정하세요
+4 font 단축 속성을 사용해 굵기 + 크기/줄간격 + 서체를 한 번에 작성하세요
+예: font: bold 16px/1.8 'Noto Sans KR', sans-serif;
+5 읽은 책 목록에서 완독한 책에 클래스를 추가하고 text-decoration: line-through 로 취소선을 표시하세요
+6 책 장르(소설/에세이 등)가 영어로 표기된 경우 text-transform: uppercase 로 대문자 처리하세요
+
+✨추가 조건 — font 단축 속성 완전 정복
+추가1 페이지 제목 h1에 font-style: italic 을 적용하고, 책 소개 문장 p에는 font-style: normal 로 해제하세요
+추가2 font 단축 속성에서 font-weight, font-style, font-variant 중 2가지 이상을 포함해서 작성하세요
+첫 번째 구간(굵기/스타일/variant)은 순서 변경 가능, 생략 가능
+두 번째 구간(크기/줄간격)에서 크기는 필수
+세 번째 구간(서체)은 절대 생략 불가
+추가3 body에 color를 rgba() 형식으로 작성해서 텍스트 색상을 지정하세요
+예: color: rgba(30, 30, 30, 0.85);
+
+💡 font 단축 속성 순서 기억법
+굵기·스타일·variant → 크기/줄간격 → 서체
+크기와 서체는 반드시 있어야 해요. 줄간격은 기본값(1.4)이면 생략 가능해요.
+
+🖥️ CSS 작성 예시 (참고용)
+css/book.css  font 단축 속성 사용 
+body { font: 400 15px/1.8 'Noto Sans KR', sans-serif; color: rgba(30, 30, 30, 0.85); }
+h1 { font: bold italic 28px 'Noto Sans KR', serif; letter-spacing: 2px; }
+.done { text-decoration: line-through; color: #aaa; }
+p { text-indent: 20px; }
+
+font 단축 속성을 올바른 순서로 작성했나요?
+font 단축 속성에 서체(font-family)를 마지막에 넣었나요?
+text-indent는 블록 요소에 적용했나요?
+완독 책에 클래스를 추가하고 CSS로 취소선을 줬나요?
+color를 rgba() 형식으로 작성했나요?
+*/
+
+p {text-indent: 20px; font-style: normal;}
+li {letter-spacing: 1px;}
+.done {text-decoration: line-through;}
+body {font: 400 15px/1.8 'Noto Sans KR', sans-serif; color: rgba(30, 30, 30, 0.85);}
+h1 {font: bold italic 28px 'Noto Sans KR', serif; letter-spacing: 2px;}
+footer {text-transform: uppercase;}

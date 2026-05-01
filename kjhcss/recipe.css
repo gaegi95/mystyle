@@ -1,0 +1,43 @@
+/*
+1 recipe.html 에 css/recipe.css 를 외부 연결하세요
+2 레시피 전체를 감싸는 div 에 width: 600px 와 margin: 0 auto 를 적용해서 가운데 정렬하세요
+3 레시피 제목 영역에 padding 을 단축 속성 2값으로 작성하세요 — 상하 / 좌우를 다르게 설정
+4 재료 목록 ul 에 border 를 설정하세요 — 선 굵기 / 선 색상 / 선 스타일(solid 또는 dashed) 모두 포함
+5 조리 순서 ol 각 li 에 padding 을 적용해서 항목 간 내부 여백을 만드세요
+6 h2, h3 등 소제목에 margin-bottom 을 설정해서 제목과 내용 사이 여백을 만드세요
+
+✨추가 조건 — border 스타일 다양하게 + 단위 활용
+추가1 border 스타일을 최소 2가지 이상 다르게 사용하세요
+solid (실선) / dashed (점선) / dotted (점점선) 중 선택
+예: 재료 목록은 dashed, 카드 전체는 solid
+추가2 padding 단축 속성 4가지 방법을 모두 사용해보세요 (값 1개 / 2개 / 3개 / 4개)
+값 1개: padding: 10px — 사방 동일
+값 2개: padding: 10px 20px — 상하 / 좌우
+값 3개: padding: 10px 20px 30px — 상 / 좌우 / 하
+값 4개: padding: 10px 20px 30px 40px — 시계방향 상·우·하·좌
+추가3 width를 px 이 아닌 % 단위로도 사용해 보세요 (예: width: 80%) 그리고 %와 px의 차이를 브라우저 창 크기를 바꿔가며 확인해 보세요
+
+💡 padding vs margin 헷갈릴 때 기억법
+padding = 박스 안쪽 여백 → background-color가 채워짐, 클릭 영역도 늘어남
+margin = 박스 바깥 여백 → 투명한 공간, 클릭 안 됨
+버튼을 크게 만들고 싶으면 padding을 쓰는 게 맞아요!
+
+🖥️ CSS 작성 예시 (참고용)
+.recipe-card { width: 600px; margin: 0 auto; // 상하:0 / 좌우:auto → 가운데 정렬
+border: 2px solid #d46b00; padding: 20px 30px; // 상하:20px / 좌우:30px }
+.ingredient-list {border: 1px dashed #ccc; padding: 10px 20px 10px 30px; margin-bottom: 16px;}
+h2 { margin-bottom: 12px; padding-bottom: 8px; border-bottom: 2px solid #d46b00; }
+
+레시피 카드를 감싸는 div에 width와 margin: 0 auto를 설정했나요?
+padding 단축 속성 2값을 사용했나요? (상하 / 좌우)
+border에 굵기·색상·스타일 3가지를 모두 넣었나요?
+border 스타일을 2가지 이상 사용했나요?
+padding의 4가지 작성법을 모두 시도했나요?
+*/
+
+body {width: 80%; margin: 0 auto; border: 2px #000 solid; padding: 10px 20px 30px;}
+h1 {padding: 10px 30px;}
+ul {border: 2px blue dashed;}
+ol li {padding: 5px;}
+h2, h3 {margin-bottom: 10px;}
+footer {padding: 10px 20px 30px 40px;}

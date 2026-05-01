@@ -1,0 +1,35 @@
+/*
+1 animal.html 의 <head> 안에 <link rel="stylesheet" href="css/animal.css"> 를 추가해서 외부 CSS 파일을 연결하세요
+2 태그 선택자로 body 에 font-family를 설정하세요 — 구글 폰트 또는 기본 sans-serif 계열 사용
+3 태그 선택자로 h1 의 color를 원하는 색으로 지정하고, text-align: center를 적용하세요
+4 태그 선택자로 p 에 line-height: 1.8 과 font-size: 15px 를 설정하세요
+5 동물 이름이 있는 태그 (예: h2) 에 color와 font-weight: 700을 설정하세요
+6 a 태그에 text-decoration: none을 적용해서 밑줄을 없애세요
+
+추가1 동물 이름 태그에 class="animal-name"을 추가하고,
+클래스 선택자로 font-size와 color를 스타일하세요
+추가2 페이지 제목이 있는 <h1> 을 감싼 요소에 id="main-title"을 추가하고,
+id 선택자로 background-color와 padding을 설정하세요
+추가3 동일한 스타일을 여러 태그에 동시 적용하는 다중 태그 선택자를 1개 이상 사용하세요
+예시 : h1, h2 { color: #333; }
+
+css/animal.css 
+body { font-family: 'Noto Sans KR', sans-serif; line-height: 1.6; }
+h1 { color: #1a5fa8; text-align: center; }
+.animal-name { font-size: 22px; font-weight: 700; color: #c8390a; }
+
+CSS 파일을 별도로 만들고 <link> 로 연결했나요?
+태그 선택자를 사용했나요? (body, h1, p, a 등)
+클래스 선택자를 사용했나요? (.클래스이름)
+id 선택자를 사용했나요? (#아이디이름)
+color 값을 헥사코드 또는 rgb() 로 표기했나요?
+*/
+
+body {font-family:'Noto Sans KR', sans-serif;}
+h1 {color: #1a5fa8; text-align: center;}
+p {line-height: 1.8; font-size: 15px;}
+h2 {font-size: 22px; font-weight: 700; color: #c8390a;}
+a {text-decoration: none;}
+.animal-name {font-size: 22px; font-weight: 700; color: blue;}
+#main-title {background-color: beige; padding: 20px;}
+h1, h2 {color: #333;}
