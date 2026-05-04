@@ -34,7 +34,7 @@ background-size를 설정했나요?
 
 body {background-color: beige;}
 h1 {background-color: skyblue;}
-.horizontal {background-color: white; background-image: linear-gradient(0deg, yellowgreen 50%, transparent 50%); background-size: 20px 20px;}
+.horizontal {background-color: white; background-image: linear-gradient(0deg, yellowgreen 50%, transparent 50%) repeat center; background-size: 20px 20px;}
 .badge {background-color: aquamarine; color: blue;}
 .diagonal {background-image: repeating-linear-gradient(45deg, gold, gold 10px, transparent 10px, transparent 20px);}
 .box {background: royalblue;}

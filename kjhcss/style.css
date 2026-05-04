@@ -40,10 +40,14 @@ footer에 background-color, text-align: center, padding을 설정했나요?
 스트라이프 패턴을 한 곳 이상 적용했나요?
 배운 CSS 속성을 골고루 모두 사용했나요?
 */
-header {background-color: beige; padding: 10px;
+header {background-color: beige; padding: 10px; background-position: center;
     background-image: linear-gradient(0deg, yellowgreen 50%, transparent 50%); background-size: 20px 20px;}
 .nav tbody a {text-decoration: none; color: white; background-color: purple;}
 main section {padding: 5px; margin-bottom: 25px;}
 input, select, textarea {border: 2px green dashed;}
 button {background-color: aqua; color: blueviolet; padding: 5px; border: 2px black solid;}
 footer {background-color: gray; color: turquoise; text-align: center; padding: 10px;}
+body {background-color: whitesmoke; color: navy;}
+h1, h2 {color: tomato;}
+body {font-family:'Noto Sans KR', sans-serif; font-weight: 700; font-size: 16px;
+    line-height: 1.5; letter-spacing: 1px; width: 80%;}
